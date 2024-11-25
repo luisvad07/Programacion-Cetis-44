@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>EVENTOS CON BOTONES</title>
+        <link rel="stylesheet" href="boton%20doble%20click.css">  <!--CSS-->
+    </head>
+
+    <body bgcolor="green">
+
+        <h1><font color=black>EVENTOS CON BOTONES</font></h1>
+
+        <form>
+            <input id="evento" type="button" style="color:brown" value="EVENTO">         <!--BOTON-->
+        </form>
+        <br>
+        <div id="dbclick"></div>           <!--DIV DONDE MUESTRA EL CONTADOR-->
+
+        <script type="text/javascript">
+        
+            var botoncito = document.getElementById("evento");      //CREAMOS EL OBJETO BOTON  
+            var d=0;
+
+
+            //------------------------------------------DOBLE CLICK----------------------------------------------------------------------------
+            botoncito.ondblclick = function() {
+            d=d+1;
+            document.getElementById("dbclick").innerHTML ="<br>"+"Evento Doble Click: "+d; 
+                if(d > 15){
+                alert ("Ha sobrepasado el limite de 15 clicks");
+                } 
+            }
+        </script>
+
+    </body>
+
+</html>

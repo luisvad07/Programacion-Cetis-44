@@ -1,0 +1,27 @@
+body {
+    margin: 4;  
+    padding: 2;
+}
+
+h1 {
+    color: orange;
+    background-color: aqua;
+    text-align: center;
+}
+
+li {
+    color: white;
+    background-color: black;
+    width: 800px;
+}
+
+
+#contador {
+    background-color: white;
+    color: green;
+    text-align: center;
+}
+
+img {
+    border-color: yellow;
+}

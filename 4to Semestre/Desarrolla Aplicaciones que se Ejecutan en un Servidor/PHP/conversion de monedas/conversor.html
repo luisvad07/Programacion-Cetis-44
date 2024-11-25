@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body bgcolor="green">
+        <h2> Conversor de Monedas </h2>
+        <form method="post" action="moneda.php">
+            <label> Cantidad de Pesos Mexicanos:</label>
+            <input type ="text" name="mx">
+            <br><br>
+            Seleccione la conversi&oacute;n que desea hacer:
+            <!-- Generamos una lista de selección -->
+            <select name="opciones">
+                <option>Dolar</option>
+                <option>Euro</option>
+                <option>Libra</option>
+                <option>Yen Japones</option>
+            </select><br><br>
+            <input type="submit" name="calcular" value="Calcular">
+        </form>  
+       
+    </body>
+</html>

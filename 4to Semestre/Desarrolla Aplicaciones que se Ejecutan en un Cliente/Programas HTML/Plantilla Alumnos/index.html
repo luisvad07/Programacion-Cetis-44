@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>HOME </title>
+        <link rel="stylesheet" href="css/estilo.css">                               <!--CARGA ARCHIVO CSS -->
+    </head>
+	
+	<body>
+
+        <div id="contenedor">                                                       <!--CONTENEDOR PRINCIPAL -->
+
+            <div id="encabezado">                                                   <!-- ENCABEZADO -->
+
+                <div id="logo">
+                    <img src="images/js.png">                                       <!--LOGO -->
+                </div>
+
+                <h2>DESARROLLA APLICACIONES QUE SE EJECUTAN EN EL CLIENTE </h2>
+            </div>
+
+            <div id="barra_nav"> 
+                <a href="index.html" style="color:#b65d09;">Principal</a>                                                   <!-- BARRA DE MENUS-->
+                <a href="" style="color:#b65d09;">Objetivo</a>
+                <a href="https://cetis44.com/" style="color:#b65d09;">CETis 44</a> 
+                <a href="https://www.google.com.mx/maps/place/Cetis+No.+44/@18.925316,-99.2529833,17z/data=!3m1!4b1!4m5!3m4!1s0x85cdde44737c5395:0xa656c0908c1defc2!8m2!3d18.9253109!4d-99.2507946?hl=es" style="color:#b65d09;">Ubicación</a> 
+                </div>
+
+            <div id="barra_izquierda">                                               <!-- BARRA IZQUIERDA -->
+                <h4>Nombre del alumno: Luis Eduardo Bahena Castillo </h4><br>
+                <div id="foto">                                                      <!-- FOTO DEL ALUMNO -->
+                    <center><img src="images/foto_alumno.jpg" width="150" height="150"></center>
+                    <center><p>Fig 1. Foto del alumno</p></center>
+                </div>
+                <br>
+                <form action="http://www.google.com/search" method="get" align="center">  <!--FORMULARIO / METODO GET-->
+                        <center>
+                            Google:<br>    
+                            <input type="search" name="q"> <br>     <!--CAJA BUSCADOR-->
+                            <input type="submit" value="Buscar">    <!--BOTON-->
+                        </center>
+                </form>
+            </div>
+
+            <div id="contenido_central">                                                <!-- CONTENIDO CENTRAL -->
+                                                                                   
+                <script type="text/javascript">
+
+                    function ejecutaEventoOnclick(){                                   //JAVASCRIPT
+                        x = "EL PROXIMO TEMA SERÁ: ARREGLOS."+"\n"+"HAS UNA PEQUEÑA INVESTIGACIÓN SOBRE ARREGLOS,"+"\n"+"PLÁSMALO EN EL DIV DE CONTENIDO." 
+                        window.alert(x) 
+                    } 
+
+                </script>
+        
+                <center>
+                    <form> 
+                        <input type=button value=INVESTIGACIÓN onclick="ejecutaEventoOnclick()"> <!-- FORMULARIO -->
+                    </form>
+                </center>
+                
+                <br>
+                ARREGLOS    
+                <br>
+                <h6>    
+                *El objeto Array de JavaScript es un objeto global que es usado en la construcción de arrays, que son objetos tipo lista de alto nivel.
+                
+                Descripción:
+                Los arreglos son como lista de objetos cuyo prototipo tiene métodos para efectuar operaciones de recorrido y de mutación. Ni la longitud de una matriz de JavaScript ni los tipos de sus elementos son fijos. Dado que la longitud de una matriz puede cambiar en cualquier momento, y los datos se pueden almacenar en ubicaciones no contiguas en la matriz, no se garantiza que las matrices de JavaScript sean densas; esto depende de cómo el programador elija usarlos. En general, estas son características convenientes; pero si estas características no son deseables para su uso particular, puede considerar el uso de matrices escritas.
+                <br>
+                Fuente:<a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/link" style="color:red"><h6> https://developer.mozilla.org/es/docs/Web/HTML/Elemento/link</h6></a>
+                <br>
+                *Un arreglo es un conjunto de datos o una estructura de datos no homogéneos que se encuentran ubicados en forma consecutiva en la memoria RAM. En javascript un arreglo es una colección ordenada de elementos no homogéneos, cada elemento puede ser de un tipo de dato diferente. En javascript los arreglos empiezan con el subíndice 0. Ejemplo: La siguiente sentencia genera un arreglo con 4 elementos de distinto tipo var b = new Array(2.5, false, 6, "Hola");
+                <br>
+                Los arrays simples, también llamados "tablas" o "matrices", son el método más común y simple de almacenar datos. Técnicamente, un Array es un objeto intrínseco de JavaScript. Admite datos del tipo cadenas, números, objetos, arrays, true, false, null.
+                <br>
+                Fuente:<a href="https://www.ecured.cu/Arreglos_en_Javascript" style="color:red"><h6>https://www.ecured.cu/Arreglos_en_Javascript</h6></a>                
+                </h6>
+            </div>
+
+            <div id="barra_derecha">                                                       <!--BARRA DERECHA -->
+                <h4>Ejercicios</h4><br>
+                                                         <!--AQUI DEBES VINCULAR(LINKS) TODOS LOS EJERCICIOS REALIZADOS -->                                           
+                <h4>Entrada y Salida</h4>
+                <ul>
+                    <li><a href="Archivos HTML/Hola Mundo.html" style="color:red">Enlace 1</a></li>
+                    <li><a href="Archivos HTML/JavaScript/HolaMundo.html" style="color:red">Enlace 2</a></li>
+                    <li><a href="Archivos HTML/calculo.html" style="color:red">Enlace 3</a></li>                                                  <!--LINKS DE ENTRADA Y SALIDA -->
+                    <li><a href="Archivos HTML/calculo%20repeticion.html" style="color:red">Enlace 4</a></li>
+                    <li><a href="Archivos HTML/examenerick.html" style="color:red">Enlace 5(examen)</a></li>
+                </ul><br>
+
+                <h4>Condición IF</h4>
+                <ul>
+                    <li><a href="Archivos HTML/servicio%20militar.html" style="color:red">Enlace 1</a></li>
+                    <li><a href="Archivos HTML/a%C3%B1os.html" style="color:red">Enlace 2</a></li>                                                   <!--LINKS DE CONDICION IF -->
+                    <li><a href="Archivos HTML/presion.html" style="color:red">Enlace 3</a></li>
+                </ul><br>
+
+                <h4>Ciclos</h4>
+                <ul>
+                    <li><a href="Archivos HTML/tablas%20de%20multiplicar.html" style="color:red">Enlace 1</a></li>
+                    <li><a href="Archivos HTML/numeros%20inversos.html" style="color:red">Enlace 2</a></li>                                                   <!--LINKS DE CICLOS-->
+                    <li><a href="Archivos HTML/pares-impares.html" style="color:red">Enlace 3</a></li>
+                    <li><a href="Archivos HTML/positivos-negativos.html" style="color:red">Enlace 4</a></li>
+                </ul><br>
+            </div>
+
+            <div id="pie_pagina">                                                           <!--PIE DE PAGINA-->
+                <p style="color:#b65d09">Copyright Ing. Eric Martínez Giles</p>
+            </div>
+        </div> 
+    </body>
+</html>

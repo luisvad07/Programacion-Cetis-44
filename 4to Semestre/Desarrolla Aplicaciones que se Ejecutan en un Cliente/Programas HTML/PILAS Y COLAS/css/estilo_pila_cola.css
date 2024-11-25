@@ -1,0 +1,47 @@
+* { 
+    margin:0;   /*Margen*/
+    padding:0; /*Relleno*/
+  }
+
+  body {                                                     /*BODY*/
+    background:#2124d3;    	
+    font-family:Comic Sans MS;
+  }
+ 
+#principal{                                                  /*DIV PRINCIPAL*/
+  background-color:rgba(240, 116, 15, 0.788);                 
+  margin:0 auto;			
+  width:800px;
+  height:650px; 
+}
+
+#cola {                                                      /*DIV COLA*/
+  background-color: rgb(30, 141, 197);
+  padding:16px;
+  width:368px;
+  height:200px;
+  float: left;
+}
+
+#pila {                                                      /*DIV PILA*/
+  background-color:rgb(172, 172, 172);
+  padding:16px;
+  width:368px;
+  height:200px;
+  float: left;
+}
+
+#imgpila {                                                   /*DIV IMAGEN PILA*/
+  float: left;
+}
+
+#imgcola {                                                   /*DIV IMAGEN COLA*/
+  float: left;
+}
+
+#pie_pagina {                                               /*PIE DE PAGINA*/
+  background-color: rgb(233, 210, 173);
+  padding:16px;
+  text-align:center;
+ }
+ 

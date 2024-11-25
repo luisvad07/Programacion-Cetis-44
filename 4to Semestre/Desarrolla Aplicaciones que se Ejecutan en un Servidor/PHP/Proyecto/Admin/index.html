@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+     <html lang="es">
+     <head>
+     <title> Base de Datos </title>
+     <meta charset="utf-8" />
+     <link href="../css/Styles.css" rel="stylesheet" type="text/css">     
+     </head>
+         
+     <body>                                 
+         
+     <div class="header">
+         <h1> Tiendas Alfi Bodegas </h1>
+           <ul class="menu">
+               <li><a href="#">*Altas</a></li>
+               <li><a href="#">*Bajas</a></li>
+               <li><a href="#">*Cambios</a></li>
+               <li><a href="#">*Consultas</a></li>
+           </ul>      
+     <div class="logo">
+        <center> 
+        <img src="../image/logo.jpg" alt="" width="220" height="220" >
+        </center>
+     </div>     
+         
+       <div class="registro_de_datos">      
+       <center>
+       <hgroup><h1> Bienvenido a la Administracion de productos </h1></hgroup>   
+          <form action="registro.php" method="post">
+          <table border="0">
+          <tr>
+               <td><label>Nombre:</label></td>
+               <td><input type="text" name="nombre" required="true"></td>
+          </tr>
+          <tr>
+               <td><label>Password:</label></td>
+               <td> <input type="password" name="clave"></td>
+          </tr>
+          <tr>
+               <td></td>
+               <td><input type="submit" value="Ingresar"></td>
+          </tr>
+       </table>
+       <div id="pie_pagina">
+             <center>
+                <p>Luis Eduardo Bahena Castillo  4BPM, Administracion BackEnd</p>
+             </center>     
+       </div>              
+       </form>         
+       </center>            
+       </div>
+       </div>     
+       </body>
+</html>

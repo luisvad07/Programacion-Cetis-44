@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>CONVERSIONES DE TEMPERATURA</title>
+
+        <script type="text/javascript">
+
+                    //FUNCION SUMA
+                    function celsius() {
+
+                        var num= document.getElementById("Convierte").value;       //OBTENEMOS EL VALOR DEL IMPUT TEXT
+
+                        if (num=="") {                             //VERIFICAMOS QUE EL CAMPO NO QUEDE VACÍO
+                            alert("CAMPO VACÍO")
+                        }
+                        
+                        else {
+                            var operacion=parseFloat(num)*1.8+32;       //CONVERTIMOS LA CADENA DE TEXTO A NUMERO
+                            document.getElementById("result").value=operacion;               //MOSTRAMOS EL RESULTADO
+                        }
+                    }  
+
+                    //FUNCION RESTA
+                    function fahrenheit() {
+                        
+                        var num= document.getElementById("Convierte").value;       //OBTENEMOS EL VALOR DEL IMPUT TEXT
+
+                        if (num=="") {                             //VERIFICAMOS QUE EL CAMPO NO QUEDE VACÍO
+                            alert("CAMPO VACÍO")
+                        }
+                        
+                        else {
+                            var operacion=parseFloat(num)-32/0.55;       //CONVERTIMOS LA CADENA DE TEXTO A NUMERO
+                            document.getElementById("result").value=operacion;               //MOSTRAMOS EL RESULTADO
+                        }
+
+                    }            
+                    
+                    //FUNCION LIMPIAR
+                    function limpiar() {
+                            document.getElementById("Convierte").value="";                    //LIMPIAMOS CAMPOS
+                            document.getElementById("result").value="";
+                    }
+        
+        </script> <!--FIN SCRIPT-->
+   
+    </head>
+
+    <body bgcolor=green>
+
+        <center>
+        
+            <form>                                                                                      <!--FORMULARIO-->
+                
+                <table border="3">                                                                          <!--TABLA-->
+                    
+                    <tr>
+                        <th colspan="4" bgcolor="red" style="color:black">CONVERSIONES DE TEMPERATURA EN JAVASCRIPT</th>
+                    </tr>
+                    
+                    <tr> <!--CAJAS DE TEXTO-->
+                        <td><input type="Text" id="Convierte" placeholder="Numero Conversion" size=16></td>       
+                        <td><input type="Text" id="result" placeholder="Resultado" size=16 readonly="readonly"></td>
+                        <td><input type=button value=LIMPIAR style="color:blue; height:24px; width:120px" onclick="limpiar()"></td> <!--FUNCION LIMPIAR-->
+                    </tr>
+
+                    <tr>  <!--BOTONES-->  
+                        <td><input type=button value="Conversion C a F" style="color:pink;height:50px; width:120px" onclick="celsius()"></td> <!--MANDAMOS LLAMAR LA FUNCIONES ( ) -->                                     
+                        <td><input type=button value="Conversion F a C" style="color:brown;height:50px; width:120px" onclick="fahrenheit()"></td> <!-- CON EL EVENTO ONCLICK-->
+                    </tr>
+
+                    <tr>
+                        <th colspan="4" bgcolor="black" style="color:white;font-size:small;">CopyRight: Luis Eduardo Bahena Castillo, Ing. Eric Martínez Giles 4BPM</th>
+                    </tr>
+
+                </table>
+                
+            </form>
+            
+        </center>
+    
+    </body>
+
+</html>

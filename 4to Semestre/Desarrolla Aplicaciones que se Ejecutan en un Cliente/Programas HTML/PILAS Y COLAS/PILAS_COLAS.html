@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>PILAS Y COLAS</title>
+        <link rel="stylesheet" href="css/estilo_pila_cola.css">  
+    </head>
+
+    <body>
+        <div id="principal">  <!--DIV PRINCIPAL-->
+
+            <!--TITULO DE PARRAFO-------------------------------------------------------------------------------------------------------->
+            <h2 align="center">SIMULACIÓN DE PILAS Y COLAS CON ARREGLOS</h2>
+            <br>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+           
+            <!--PARRAFO COLA------------------------------------------------------------------------------------------------------------->
+            <h3>Cola</h3>
+            <br>
+
+            <div id="imgcola">                                                                                  <!--DIV IMAGEN COLA-->       
+                <center><img src="images/cola1.png" width="120" height="120"></center>
+            </div>
+
+            <p align="justify"> 
+                Cuando uno quiere ir a comer un sándwich a la cafetería se pone en una fila.     <!--DIV PARRAFO COLA-->
+                Esta estructura es una estructura FIFO (first in, first out), 
+                el primero en entrar es el primero en salir. En computación se llama "colas" a las filas. 
+                En la práctica. quien no ha escuchado "¡a la cola!".
+            </p>
+            <br><br>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+            
+            <!--PARRAFO PILA------------------------------------------------------------------------------------------------------------->
+            <h3>Pila</h3>
+            <br>
+
+            <div id="imgpila">                                                                                   <!--DIV IMAGEN PILA-->
+                <center><img src="images/pila1.png" width="120" height="120"></center>  
+            </div>
+
+            <p align="justify">                                                                                   <!--DIV PARRAFO PILA-->
+            Una pila (stack) es un objeto similar a una pila de platos, donde se puede agregar y sacar datos sólo por el extremo superior. 
+            Esta estructura es una estructura LIFO (Last In, First Out), último en entrar, primero en salir.
+            </p>
+            <br><br><br>
+            <!---------------------------------------------------------------------------------------------------------------------------->
+
+             <!--DIV COLA----------------------------------------------------------------------------------------------------------------->
+            <div id="cola">
+
+                <script type="text/javascript">                                      //SCRIPT
+                    function colaOnclick(){
+                        //AQUI VA TU CODIGO
+                        alert("AQUI VA TU CODIGO COLA // MODIFICA");
+                        var tamaño=prompt("INTRODUCE EL TAMAÑO DEL ARREGLO", "Arreglo");
+                        var cola=new Array(tamaño);                                         //CREAMOS EL OBJETO ARREGLO
+
+                        for(var j=0;j<tamaño;j++) {                                         //CICLO PARA INTRODUCIR VALORES AL ARREGLO
+                        cola[j]=prompt("INTRODUCE EL VALOR "+j+" DEL ARREGLO");
+                        }
+                        //DEBES IMPRIMIR EL RESULTADO DENTRO DEL DIV -- NO DEBE SALIR DEL RECUADRO
+                        for(var j=0;j<tamaño;j++) {                                         //CICLO PARA IMPRIMIR VALORES DEL ARREGLO
+                        document.getElementById("cola").innerHTML += "EL VALOR "+j+" DEL ARREGLO ES: "+cola[j]+"<br>";   //MANDA EL VALOR AL DIV CONTENIDO
+                        }                                                
+                    }
+                </script>   <!--FIN SCRIPT-->
+                
+                <center>
+                    <form> 
+                        <input type=button value=COLA onclick="colaOnclick()">      <!-- FORMULARIO -->
+                    </form>                         
+                </center>
+            </div>
+             <!--------------------------------------------------------------------------------------------------------------------------->
+
+            <!--DIV PILA------------------------------------------------------------------------------------------------------------------>
+            <div id="pila">
+                <script type="text/javascript">                                     //SCRIPT
+
+                    function pilaOnclick(){
+                        //AQUI VA TU CODIGO
+                        alert("AQUI VA TU CODIGO PILA // MODIFICA");
+                        var tamaño=prompt("INTRODUCE EL TAMAÑO DEL ARREGLO", "Arreglo");
+                        var pila=new Array(tamaño);                                         //CREAMOS EL OBJETO ARREGLO
+
+                        for(var a=0;a<tamaño;a++) {                                         //CICLO PARA INTRODUCIR VALORES AL ARREGLO
+                        pila[a]=prompt("INTRODUCE EL VALOR "+a+" DEL ARREGLO");
+                        }
+                        //DEBES IMPRIMIR EL RESULTADO DENTRO DEL DIV -- NO DEBE SALIR DEL RECUADRO
+                        var a=tamaño;
+		                do{                                                                //CICLO PARA IMPRIMIR VALORES DEL ARREGLO
+                        document.getElementById("pila").innerHTML +="EL VALOR "+a+" DEL ARREGLO ES: "+pila[a]+"<br>";      //MANDA EL VALOR AL DIV CONTENIDO
+                        --a;
+                        }while (a>=0)
+                    }
+                
+                </script>   <!--FIN SCRIPT-->
+
+                <center>
+                    <form> 
+                        <input type=button value=PILA onclick="pilaOnclick()">       <!-- FORMULARIO -->
+                    </form>
+                </center>
+            </div>
+            <!---------------------------------------------------------------------------------------------------------------------------->
+            
+            <!--PIE DE PAGINA------------------------------------------------------------------------------------------------------------->
+            <div id="pie_pagina"> 
+                <p>Luis Eduardo Bahena Castillo  4BPM</p>
+                <p>Copyright Ing. Eric Martínez Giles</p>
+            </div>
+            <!---------------------------------------------------------------------------------------------------------------------------->
+       
+        </div>  <!--FIN DIV PRINCIPAL-->
+  
+    </body>
+
+</html>

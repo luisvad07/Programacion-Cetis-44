@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ENTRADA DE DATOS</title>
+    </head>
+	
+	<body bgcolor="purple">
+	 <font color="orange"; face="Arial"> <h3>CALCULA EL IMPUESTO:</h3> </font> 
+		<script type="text/javascript">
+			var impuesto,l;
+			impuesto=prompt("INTRODUCE EL MONTO DEL IMPUESTO","IMPUESTO");
+			
+			if(impuesto<96855){
+				l=(impuesto*0.18)-55;
+				alert("El impuesto es del 18%");
+				alert("Monto a pagar: "+l);
+			}
+			else if (impuesto>96855){
+				l=(impuesto*0.32)+14856;
+				alert("El impuesto es del 32%");
+				alert("Monto a pagar: "+l);
+			}
+		</script>
+		<h1> LUIS EDUARDO BAHENA CASTILLO 4BPM</h1>
+	</body>
+</html>

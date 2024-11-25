@@ -1,0 +1,4 @@
+Línea 12: la clase MSComctlLib.ProgressBar del control prbPrgrso no era una clase de control cargada.
+Línea 18: el nombre de la propiedad _ExtentX de prbPrgrso no es válido.
+Línea 19: el nombre de la propiedad _ExtentY de prbPrgrso no es válido.
+Línea 20: el nombre de la propiedad _Version de prbPrgrso no es válido.

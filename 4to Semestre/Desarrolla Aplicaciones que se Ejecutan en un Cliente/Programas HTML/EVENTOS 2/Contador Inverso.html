@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>EVENTOS UWU</title>
+        <link rel="stylesheet" href="lost.css">
+    </head>
+
+    <body bgcolor="brown">
+
+        <h1>Evento OnFocus y OnBlur</h1>
+
+        <ul>
+            <li>Cambia de ventana o de pestaña y observa que pasa, pero hazlo rapido por que el tiempo corre.</li>
+        </ul>
+
+        <!--DIV CONTADOR-->
+
+        <h1><div id="contador"></div></h1>
+
+        <script type="text/javascript">
+   
+            var countdownTimer;  
+            var seconds = 10; 
+            
+            function Iniciar() { //CONTADOT
+            var minutes = Math.round((seconds - 30)/60); 
+            var remainingSeconds = seconds % 60; 
+            if (remainingSeconds < 10) { 
+                remainingSeconds = "0" + remainingSeconds; 
+            } 
+            document.getElementById('contador').innerHTML = minutes + ":" +     remainingSeconds; 
+            if (seconds == 0) { 
+                alert('PERDISTE :('); 
+                clearInterval(countdownTimer);
+            } 
+            else { 
+                seconds--;
+            }
+                       
+            } 
+     
+            
+             window.onfocus = function focus(){      //EVENTO ONFOCUS
+                 countdownTimer = setInterval('Iniciar()', 1000);    
+              }
+                     
+
+              window.onblur = function blur(){       //EVENTO ONBLUR
+            
+                    //AQUI SE REINICIA EL CONTADOR
+                    clearInterval(countdownTimer);
+                    minutes=0;seconds=10;
+                    Iniciar();
+              }
+
+        </script>
+        
+        <center>
+        <img src="imagen.jpg" border="5" width="800" height="400">
+        </center>    
+            
+        
+    </body>
+
+</html>

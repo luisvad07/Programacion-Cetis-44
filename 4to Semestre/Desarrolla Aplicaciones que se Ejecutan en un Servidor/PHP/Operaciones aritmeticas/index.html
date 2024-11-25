@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Crear un formulario que contenga dos cajas de texto, una lista desplegable
+y un botón que permita llamar la función para calcular la operación
+matemática seleccionada.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <form method="post" action="calcular.php">
+            <label>N&uacute;mero 1</label>
+            <input type ="text" size="5" name="num1" required>
+            <br><br>
+            <label>N&uacute;mero 2</label>
+            <input type="text" size="5" name="num2" required>
+            <br><br>
+            Seleccione la operacion matem&aacute;tica
+            <!-- Generamos una lista de selcción -->
+            <select name="opciones">
+                <option>S</option>
+                <option>R</option>
+                <option>M</option>
+                <option>D</option>
+            </select><br><br>
+            <input type="submit" name="calcular" value="Calcular">
+        </form>  
+       
+    </body>
+</html>

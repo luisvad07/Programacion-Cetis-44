@@ -1,0 +1,56 @@
+body {
+    margin: 2;
+    padding: 0;
+    background-color: gray;
+}
+
+.header{
+    width: 965px;
+    height: 310px;
+    background: purple;
+    margin: auto;
+} 
+    
+.logo {
+    background-color: yellow;
+    width: 250px;
+    height: 230px;
+}
+
+.menu{
+    float: right;
+    padding-right: 10px;
+}
+
+.menu li{
+    display: inline-block;
+}    
+    
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding: 25px;
+}
+.menu a:hover{
+    background-color: green;
+    padding: 15px;
+}
+
+.registro_de_datos {
+    background-color: hotpink;
+    width: 965px;
+    height: 155px;
+}
+
+#registro_de_datos {
+    background-color: hotpink;
+    width: 965px;
+    height: 310px;
+}
+
+#pie_pagina {
+    background-color: brown;
+    color: white;
+    width: 965px;
+    height: 20px;    
+}
